@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Checkout from './Checkout'
 import { BrowserRouter as Router, Route, Switch ,Redirect, Link } from "react-router-dom"; 
 import SignIn from './SignIn';
+import FileAComplaint from './FileAComplaint';
 
 
 function TabContainer(props) {
@@ -158,8 +159,8 @@ componentWillMount(){
             </Tabs>
           </AppBar>
           {value === 0 && <TabContainer><Checkout pathChange={this.pathChange}/></TabContainer>}
-          {value === 1 && <TabContainer>Page Two</TabContainer>}
-          {value === 2 && <TabContainer>Page Three</TabContainer>}
+          {value === 1 && <TabContainer>Page Twooooo</TabContainer>}
+          {value === 2 && <TabContainer><FileAComplaint/></TabContainer>}
         </div>
       </NoSsr>
     );

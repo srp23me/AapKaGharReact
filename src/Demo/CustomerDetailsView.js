@@ -142,7 +142,8 @@ handleClose = () => {
 };
 componentWillMount(){
   this.props.pathChange(window.location.pathname)
-  console.log('pathChange')
+  console.log('pathname----->'+window.location.pathname)
+  alert('pathname----->'+window.location.pathname)
 }
 
   render() {

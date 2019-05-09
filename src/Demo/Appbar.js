@@ -23,6 +23,7 @@ import { Grid } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
 import White from '@material-ui/core/colors'
 import Blue from '@material-ui/core/colors'
+import { white } from 'material-ui/styles/colors';
 
 const styles = theme => ({
   root: {
@@ -39,6 +40,10 @@ const styles = theme => ({
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
+  },
+  button: {
+    margin: theme.spacing.unit,
+    color:white,
   },
   title: {
     display: 'Aap Ka Ghar',
@@ -143,7 +148,7 @@ class PrimarySearchAppBar extends React.Component {
 
               {/* <Login/> */}
               {console.log(this.props.title)}
-              { this.props.title === "/" ? "" : <a href="/"><i className="logout fas fa-sign-out-alt"></i></a>}
+              { this.props.title === "/" ? "" : <a href="/"><Button className={classes.button}>LogOut</Button></a>}
 
             </div>
             <div className={classes.sectionMobile}>
